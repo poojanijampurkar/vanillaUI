@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          extend: {
+            colors: {
+              bgBase: '#161616',
+              dashboard: '#262626',
+              card: '#404040',
+              item: '#666666',
+              circle: '#999999',
+            },
+          },
+        },
+      };
+    </script>
+    <title>Style Trends (November 2023) - Bento Style</title>
+  </head>
+  <body
+    class="bg-bgBase font-poppins text-white flex flex-col min-h-screen text-sm"
+  >
+    <main class="flex-1 flex items-center justify-center p-4">
+      <!-- Dashboard -->
+      <main class="bg-dashboard p-4 rounded-lg tracking-wide grid gap-4 md:grid-cols-2 lg:grid-cols-[auto_auto_auto_auto]">
+        <!-- Profile -->
+        <section class="bg-card p-4 rounded-lg space-y-2">
+          <h2 class="font-bold">Good Morning Champ!</h2>
+          <div>Time to seize the day 🌞</div>
+        </section>
+        <!-- Weekly Schedule -->
+        <section class="bg-card p-4 rounded-lg space-y-2 lg:row-span-2 lg:col-span-2">
+          <h2 class="font-bold">Weekly Schedule</h2>
+          <div class="grid grid-cols-2 gap-1">
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Running</div>
+              <div class="text-xs flex justify-center gap-2">
+                <span>Mon</span>
+                <span>6:00 AM</span>
+              </div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Swimming</div>
+              <div class="text-xs flex justify-center gap-2">
+                <span>Tue</span>
+                <span>7:00 AM</span>
+              </div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Cycling</div>
+              <div class="text-xs flex justify-center gap-2">
+                <span>Wed</span>
+                <span>6:30 AM</span>
+              </div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Yoga</div>
+              <div class="text-xs flex justify-center gap-2">
+                <span>Thu</span>
+                <span>6:00 AM</span>
+              </div>
+            </div>
+            <div
+              class="bg-item p-2 text-center rounded-sm col-span-2"
+            >
+              <div class="font-semibold">Weight Training</div>
+              <div class="text-xs flex justify-center gap-2">
+                <span>Fri</span>
+                <span>8:00 AM</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Exercises -->
+        <section class="bg-card p-4 rounded-lg space-y-2 md:row-span-2 md:row-start-1 md:col-start-2 lg:col-start-4">
+          <h2 class="font-bold">Last 5 Exercises</h2>
+          <div class="grid grid-cols-2 gap-1">
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Running</div>
+              <div class="text-xs">30 min</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Swimming</div>
+              <div class="text-xs">45 min</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Cycling</div>
+              <div class="text-xs">60 min</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">Yoga</div>
+              <div class="text-xs">40 min</div>
+            </div>
+            <div
+              class="bg-item p-2 text-center rounded-sm col-span-2"
+            >
+              <div class="font-semibold">Weight Training</div>
+              <div class="text-xs">50 min</div>
+            </div>
+          </div>
+        </section>
+        <!-- Active Calories -->
+        <section class="bg-card p-4 rounded-lg space-y-2 md:row-start-2">
+          <h2 class="font-bold">Active Calories</h2>
+          <div class="grid grid-flow-col gap-1">
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">500</div>
+              <div class="text-xs">Today</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">3500</div>
+              <div class="text-xs">This Week</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">14000</div>
+              <div class="text-xs">This Month</div>
+            </div>
+          </div>
+        </section>
+        <!-- Personal Bests -->
+        <section class="bg-card p-4 rounded-lg space-y-2">
+          <h2 class="font-bold">Personal Bests</h2>
+          <div class="grid grid-col-2 gap-1">
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">22 min</div>
+              <div class="text-xs">Fastest 5K Run</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm">
+              <div class="font-semibold">250 lbs</div>
+              <div class="text-xs">Heaviest Deadlift</div>
+            </div>
+            <div class="bg-item p-2 text-center rounded-sm col-span-2">
+              <div class="font-semibold">3 min</div>
+              <div class="text-xs">Longest Plank</div>
+            </div>
+          </div>
+        </section>
+        <!-- Challenges -->
+        <section class="bg-card p-4 rounded-lg space-y-2 md:row-start-3 md:col-start-2">
+          <h2 class="font-bold">Challenges</h2>
+          <div class="grid grid-flow-row">
+            <div class="p-2 space-y-1">
+              <div class="w-full h-1 rounded-sm bg-circle">
+                <div class="h-full bg-dashboard rounded-sm w-2/5"></div>
+              </div>
+              <div>30 Day Running Streak</div>
+            </div>
+            <div class="p-2 space-y-1">
+              <div class="w-full h-1 rounded-sm bg-circle">
+                <div class="h-full bg-dashboard rounded-sm w-1/2"></div>
+              </div>
+              <div>1000 Pushups in a Month</div>
+            </div>
+            <div class="p-2 space-y-1">
+              <div class="w-full h-1 rounded-sm bg-circle">
+                <div class="h-full bg-dashboard rounded-sm w-1/3"></div>
+              </div>
+              <div>Swim 20km in a Month</div>
+            </div>
+          </div>
+        </section>
+        <!-- Friends Activity -->
+        <section class="bg-card p-4 rounded-lg space-y-2 lg:col-span-2">
+          <h2 class="font-bold">Friends Activity</h2>
+          <div class="grid grid-flow-row gap-2">
+            <div class="bg-item p-2 rounded-sm flex gap-2 p-2 items-center">
+              <div class="rounded-full bg-circle size-10"></div>
+              <div class="flex-1">
+                <div class="font-semibold">Jane</div>
+                <div class="text-xs">
+                  just set a new record in cycling: 30 miles!
+                </div>
+              </div>
+            </div>
+            <div class="bg-item p-2 rounded-sm flex gap-2 p-2 items-center">
+              <div class="rounded-full bg-circle size-10"></div>
+              <div class="flex-1">
+                <div class="font-semibold">Mike</div>
+                <div class="text-xs">
+                  completed the 30 Day Running Challenge!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </main>
+    <footer class="text-center p-4">
+      <p>
+        Reference:
+        <a
+          href="https://codepen.io/challenges/2023/november/1"
+          class="underline"
+          >CodePen Challenge (November 2023) - Bento Style
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
